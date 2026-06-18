@@ -4,7 +4,7 @@ dockerfilePath = "core/Dockerfile"
 
 [deploy]
 numReplicas = 1
-healthcheckPath = "/api/status"
+healthcheckPath = "/api/game-version"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 5

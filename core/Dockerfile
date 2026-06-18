@@ -53,8 +53,6 @@ COPY --from=builder /app/web/dist ../web/dist
 
 RUN mkdir -p data/logs && chmod -R 755 data
 
-VOLUME ["/app/core/data"]
-
 EXPOSE 3007
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
